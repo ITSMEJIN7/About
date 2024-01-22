@@ -6,7 +6,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.35)),url(about.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.3)),url(about.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -64,51 +64,22 @@
 .content{
     width: 100%;
     position:absolute;
-    top: 30%;
+    top: 40%;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
 }
 .content h1{
     font-size: 70px;
-    margin-top: 60px;
+    margin-top: 3px;
 }
 .content p{
-    margin-top: 20px auto;
+    margin: 20px 75;
     font-weight: 100;
     line-height: 25px;
     font-weight: normal;
     color: #fff;
     text-align: justify;
-}
-button{
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 26px;
-    font-weight: bold;
-    border: 2px solid #E1C699;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    background: transparent; 
-}
-
-span{
-    background: #E1C699;
-    height: 100%;
-    width: 0%;
-    border-radius: 25x;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: 0.5s;
-    z-index: -1;
-}
-button:hover {
-  background-color: #E1C699;
-  color: white;
-  opacity: 0.9;
-}
+    margin-bottom: 0
+    
+} 
