@@ -75,8 +75,7 @@
     padding-bottom: 5
 }
 .content p{
-    margin-top: 100px;
-    margin: 0 100;
+    margin-top: 20px auto;
     font-weight: 100;
     line-height: 25px;
     font-weight: normal;
