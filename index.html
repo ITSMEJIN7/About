@@ -1,38 +1,41 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>House of Taho</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-<body style="background-color:#E1C699;">
-    
-    <div class="banner">   
-        
-        <div class="navbar">
-            <img src="logo.png" class="logo">
-            <div class="logo2">
-                HOUSE OF TAHO
-            </div>
-            <ul>           
-                <li><a href="https://itsmejin7.github.io/Website-HOT/">Home</a></li>            
-                <li><a href="#">About</a></li>  
-                <li><a href="https://itsmejin7.github.io/Contacts/">Contacts</a></li>      
-            </ul>
-        </div> 
-        <div class="content">
-            <h1>ABOUT</h1>
-            
-            <p>
-HOUSE OF TAHO is the brainchild of Elena, a native of Cagayan de Oro, together with three friends with initial capitalization of ₱250,000. The idea was to sell a product that is familiar to the people but needs to be elevated to cater and fit to mall-goers.
-<br>
-That idea started the rise of TAHO ATBP, which opened its first kiosk at Gaisano City Mall, Cagayan de Oro City in December 2015.
-<br>
-                With Elena’s leadership, determination, and dedication, TAHO ATBP revamped its operations, branding, and started operating under new management under Soy Lab Corp. together with her husband, sister and brother in-law.
-<br>
-On May 2017, the company started the rebranding process by changing its name to HOUSE of TAHO, even the color theme, logo, cart/kiosk designs were improved to cater and meet to the needs of the growing customers.
-</p> </div>
-        
-        
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="here">
+    <h1 id="p">Mini Calendar with Current Date</h1>
+    <div class="calendar">
+        <div class="left">
+            <p id="date">01</p>
+            <p id="day">Sunday</p>
+        </div>
+        <div class="right">
+            <p id="month">January</p>
+            <p id="year">2024</p>
+        </div>
     </div>
-    
+</div>
+<script>
+
+const date = document.getElementById("date");
+const day = document.getElementById("day");
+const month = document.getElementById("month");
+const year = document.getElementById("year");
+
+const today = new Date();
+
+const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const allMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+date.innerHTML = today.getDate();
+day.innerHTML = weekDays[today.getDay()];
+month.innerHTML = allMonths[today.getMonth()];
+year.innerHTML = today.getFullYear();
+
+</script>
 </body>
 </html>
